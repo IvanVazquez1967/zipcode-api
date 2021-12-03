@@ -3,12 +3,12 @@
 # Zipcode API
 <h3>Mexico Zip Codes API (Spot2 Backend position challenge)<h3/>
 
-This application has been developed with the Laravel Sail technology, so in order to run it in a local environment you can follow this steps:
+This application has been developed with Laravel Framework, so in order to run it in a local environment you must have php stack environment on you system (php, apache, composer, mysql, Laravel) can follow this steps:
 
-- After clone, go to the root dir in your console and execute (it's an alias for the ./vendor/bin/sail bash):
+- After clone, go to the root dir in your console and execute migrations:
 
 ```bash
-alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
+php artisan migrate
 ```
 
 - Configure your .env file. Run the next command to obtain an APP KEY:
@@ -16,14 +16,17 @@ alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
 sail php artisan key:generate --show
 ```
 
-- The repository already contains every of the dependencies to run a Laravel app in a docker container, including the Dockerfile, so you only have to do:
+- You can use fake data for development, running:
 
 ```bash
-sail up
+php artisan migrate:fresh --seed
 ```
 
-- If everything is alright, a Development Server has been started (http://0.0.0.0:80)
+- Or if you prefer, you can run the next command in order to get real zip codes data:
 
+```bash
+php artisan command:store-zipcodes-data
+```
 
 
 ## License

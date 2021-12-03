@@ -14,6 +14,7 @@ class SettlementFactory extends Factory
     public function definition()
     {
         return [
+            'id' => $this->faker->unique(true)->numberBetween(1, 80),
             'name' => $this->faker->streetName(),
             'settlement_type_id' => rand(1, 24),
         ];

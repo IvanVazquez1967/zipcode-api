@@ -14,6 +14,7 @@ class SettlementTypeFactory extends Factory
     public function definition()
     {
         return [
+            'id' => $this->faker->unique(true)->numberBetween(1, 24),
             'type' => $this->faker->word,
         ];
     }

@@ -14,6 +14,7 @@ class StateFactory extends Factory
     public function definition()
     {
         return [
+            'id' => $this->faker->unique(true)->numberBetween(1, 32),
             'name' => $this->faker->city(),
         ];
     }
