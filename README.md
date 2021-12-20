@@ -1,7 +1,7 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 # Zipcode API
-<h3>Mexico Zip Codes API (Spot2 Backend position challenge)<h3/>
+<h3>Mexico Zip Codes API<h3/>
 
 This application has been developed with Laravel Framework, so in order to run it in a local environment you must have php stack environment on you system (php, apache, composer, mysql, Laravel) can follow this steps:
 
